@@ -49,15 +49,36 @@ window.onload = function () {
 const order = document.querySelectorAll(".showcase-title");
 const modalOrder = document.querySelector(".modal");
 const nameProduct = document.querySelector(".newsletter-title");
+const imageOrder = document.querySelector(".newsletter-img img");
 
 for (let i = 0; i < order.length; i++) {
   order[i].addEventListener("click", function () {
+    const imageProduct = order[i].parentNode.parentNode.parentNode.querySelector('.showcase-img');
+    console.log(imageProduct.src);
     modalOrder.style.opacity = "1";
     modalOrder.style.visibility = "visible";
     modalOrder.style.pointerEvents = "all";
     nameProduct.innerText = order[i].textContent;
+    imageOrder.src=imageProduct.src;
   });
 }
+
+const order1 = document.querySelectorAll(".showcase-title1");
+for (let i = 0; i < order1.length; i++) {
+  order1[i].addEventListener("click", function () {
+    const imageProduct1 =this.parentNode.parentNode.previousElementSibling.querySelector('.product-img.default');
+    console.log(imageProduct1.src);
+    modalOrder.style.opacity = "1";
+    modalOrder.style.visibility = "visible";
+    modalOrder.style.pointerEvents = "all";
+    nameProduct.innerText = order1[i].textContent;
+    imageOrder.src=imageProduct1.src;
+  });
+}
+
+
+
+
 
 // mobile menu variables
 const mobileMenuOpenBtn = document.querySelectorAll(
