@@ -245,21 +245,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   z-index: 10;
 }
 
-@-webkit-keyframes popup {
-
-  0% {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-
-  100% {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-  }
-
-}
 
 @keyframes popup {
 
@@ -351,6 +336,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   color: var(--sonic-silver);
   font-size: var(--fs-7);
   line-height: 1.6;
+  text-align: center;
+  display: flex;
 }
 
 .email-field {
@@ -362,19 +349,9 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   margin-bottom: 16px;
 }
 
-.btn-newsletter {
-  background: var(--eerie-black);
-  color: var(--white);
-  font-size: var(--fs-7);
-  font-weight: var(--weight-600);
-  text-transform: uppercase;
-  padding: 10px 15px;
-  -webkit-border-radius: var(--border-radius-sm);
-          border-radius: var(--border-radius-sm);
-  margin: auto;
-  -webkit-transition: var(--transition-timing);
-  -o-transition: var(--transition-timing);
-  transition: var(--transition-timing);
+.truck-button {
+ margin: 3rem;
+
 }
 
 .btn-newsletter:hover { background: var(--salmon-pink); }
