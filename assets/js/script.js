@@ -7,6 +7,7 @@ const modalCloseOverlay = document.querySelector("[data-modal-overlay]");
 
 // modal function
 const modalCloseFunc = function () {
+
   modalOrder.style.opacity = "0";
   modalOrder.style.visibility = "hidden";
   modalOrder.style.pointerEvents = "none";
@@ -32,10 +33,27 @@ const modalCloseFunc = function () {
     });
   });
 };
-
-// modal eventListener
 modalCloseOverlay.addEventListener("click", modalCloseFunc);
 modalCloseBtn.addEventListener("click", modalCloseFunc);
+
+// notification toast variables
+const notificationToast = document.querySelector('[data-toast]');
+const toastCloseBtn = document.querySelector('[data-toast-close]');
+const modalNotification = document.querySelector('.modal-notification');
+// notification toast eventListener
+toastCloseBtn.addEventListener('click', function () {
+  notificationToast.classList.add('closed');
+});
+// modal eventListener
+modalNotification.addEventListener("click", function(){
+  notificationToast.classList.add('closed');
+  modalNotification.classList.add("closed");
+} );
+modalCloseBtn.addEventListener("click", function(){
+  notificationToast.classList.add('closed');
+  modalNotification.classList.add("closed");
+});
+
 
 window.onload = function () {
   var anchors = document.getElementsByTagName("a");
@@ -45,7 +63,7 @@ window.onload = function () {
     });
   }
 };
-
+//Tittle
 const order = document.querySelectorAll(".showcase-title");
 const modalOrder = document.querySelector(".modal");
 const nameProduct = document.querySelector(".newsletter-title");
@@ -54,7 +72,6 @@ const imageOrder = document.querySelector(".newsletter-img img");
 for (let i = 0; i < order.length; i++) {
   order[i].addEventListener("click", function () {
     const imageProduct = order[i].parentNode.parentNode.parentNode.querySelector('.showcase-img');
-    console.log(imageProduct.src);
     modalOrder.style.opacity = "1";
     modalOrder.style.visibility = "visible";
     modalOrder.style.pointerEvents = "all";
