@@ -402,8 +402,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
           border-radius: var(--border-radius-md);
   overflow: hidden;
   z-index: 2;
-  -webkit-animation: scaleUp 0.5s ease-in-out 5s forwards;
-          animation: scaleUp 0.5s ease-in-out 5s forwards;
+  -webkit-animation: scaleUp  ease-in-out 2.5s forwards;
+          animation: scaleUp  ease-in-out 2.5s forwards;
 }
 
 .notification-toast.closed { display: none; }
