@@ -101,7 +101,7 @@ img, ion-icon, button, a { display: block; }
 span { display: inline-block; }
 
 html {
-  font-family: "Poppins", sans-serif;
+  font-family: "Monolith", sans-serif;
   -ms-scroll-chaining: none;
       overscroll-behavior: contain;
 }

@@ -80,7 +80,6 @@ const order1 = document.querySelectorAll(".showcase-title1");
 for (let i = 0; i < order1.length; i++) {
   order1[i].addEventListener("click", function () {
     const imageProduct1 =this.parentNode.parentNode.previousElementSibling.querySelector('.product-img.default');
-    console.log(imageProduct1.src);
     modalOrder.style.opacity = "1";
     modalOrder.style.visibility = "visible";
     modalOrder.style.pointerEvents = "all";
@@ -89,7 +88,17 @@ for (let i = 0; i < order1.length; i++) {
   });
 }
 
-
+const addToCard = document.querySelector(".add-cart-btn");
+const tittleSpecial = document.querySelector(".showcase-title-special");
+addToCard.addEventListener("click", function(){
+  const imageProduct1 = document.querySelector('.showcase-banner img');
+  console.log(imageProduct1)
+  modalOrder.style.opacity = "1";
+  modalOrder.style.visibility = "visible";
+  modalOrder.style.pointerEvents = "all";
+  nameProduct.innerText = tittleSpecial.textContent;
+  imageOrder.src=imageProduct1.src;
+});
 
 
 
