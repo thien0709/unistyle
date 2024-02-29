@@ -54,11 +54,14 @@ toastBtn.addEventListener('click', function(){
 window.onload = function () {
   var anchors = document.getElementsByTagName("a");
   for (var i = 0; i < anchors.length; i++) {
-    anchors[i].addEventListener("click", function (event) {
-      event.preventDefault();
-    });
+    if (anchors[i].id !== "titleProduct") {
+      anchors[i].addEventListener("click", function (event) {
+        event.preventDefault();
+      });
+    }
   }
 };
+
 //Tittle
 const order = document.querySelectorAll(".showcase-title");
 const modalOrder = document.querySelector(".modal");
