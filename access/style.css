@@ -108,7 +108,6 @@ input:not(:placeholder-shown) + label {
   cursor: pointer;
   padding: 1rem;
   margin: auto;
-  font-size: 0.7rem;
   font-style: italic;
   text-decoration: underline;
   color: var(--red);
