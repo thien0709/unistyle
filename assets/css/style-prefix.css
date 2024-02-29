@@ -421,15 +421,11 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .toast-close-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 .toast-banner {
-  height: 20rem;
-  border: 1px solid var(--cultured);
-  -webkit-border-radius: var(--border-radius-sm);
-          border-radius: var(--border-radius-sm);
+  padding: 0 2rem;
 }
 
 .toast-banner img {
-  width: 100%;
-  height: 100%;
+  height: 20rem;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
@@ -443,20 +439,26 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .toast-message {
-  font-size: var(--fs-10);
+  font-size: var(--fs-5);
   color: var(--sonic-silver);
   margin-bottom: 8px;
 }
 
 .toast-title {
-  font-size: var(--fs-7);
+  font-size: 30px;
   font-weight: var(--weight-500);
   color: var(--onyx);
 }
 
 .toast-meta {
-  font-size: var(--fs-10);
-  color: var(--sonic-silver);
+  margin-top: 10px;
+  padding: 1rem;
+  background-color: var(--salmon-pink);
+  border-radius: .5rem;
+  font-size: var(--fs-7);
+  color: var(--cultured);
+  width: fit-content;
+  cursor: pointer;
 }
 
 
