@@ -40,17 +40,17 @@ modalCloseBtn.addEventListener("click", modalCloseFunc);
 const notificationToast = document.querySelector('[data-toast]');
 const toastCloseBtn = document.querySelector('[data-toast-close]');
 const modalNotification = document.querySelector(".modal-notification");
-const toastBtn = document.querySelector(".toast-btn");
+const toastBtn = document.querySelector(".toast-meta");
 // notification toast eventListener
 toastCloseBtn.addEventListener('click', function () {
   notificationToast.classList.add('closed');
   modalNotification.classList.add("closed");
 });
-// toastBtn.addEventListener('click', function(){
-//   notificationToast.classList.add('closed');
-//   modalNotification.classList.add("closed");
-// });
-
+toastBtn.addEventListener('click', function(){
+  notificationToast.classList.add('closed');
+  modalNotification.classList.add("closed");
+});
+// Submit off
 window.onload = function () {
   var anchors = document.getElementsByTagName("a");
   for (var i = 0; i < anchors.length; i++) {
