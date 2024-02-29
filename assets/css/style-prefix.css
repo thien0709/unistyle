@@ -393,7 +393,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 .modal-notification.closed { display: none; }
 .notification-toast {
-  position: relative;
+  display: flex;
+   position: relative;
   margin: 20px;
   width: 40rem;
   height: 20rem;
@@ -404,6 +405,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   z-index: 2;
   -webkit-animation: scaleUp  ease-in-out 2.5s forwards;
           animation: scaleUp  ease-in-out 2.5s forwards;
+ 
 }
 
 .notification-toast.closed { display: none; }
@@ -412,15 +414,14 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   position: absolute;
   top: 10px;
   right: 10px;
-  color: var(--sonic-silver);
+  color: var(--salmon-pink);
   z-index: 5;
 }
 
 .toast-close-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 .toast-banner {
-  width: 70px;
-  height: 70px;
+  height: 20rem;
   border: 1px solid var(--cultured);
   -webkit-border-radius: var(--border-radius-sm);
           border-radius: var(--border-radius-sm);
@@ -438,7 +439,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .toast-detail {
   width: -webkit-calc(100% - 85px);
   width: calc(100% - 85px);
-  padding-right: 10px;
+  padding : 40px;
 }
 
 .toast-message {
