@@ -421,7 +421,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .toast-close-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 .toast-banner {
-  padding: 0 2rem;
 }
 
 .toast-banner img {
@@ -433,34 +432,42 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .toast-detail {
-  width: -webkit-calc(100% - 85px);
-  width: calc(100% - 85px);
-  padding : 40px;
+  margin: 5rem 10px; 
 }
 
 .toast-message {
-  font-size: var(--fs-5);
-  color: var(--sonic-silver);
-  margin-bottom: 8px;
+  color: var(--onyx);
+  font-size: var(--fs-2);
+  font-weight: var(--weight-600);
+  margin-bottom: 10px;
 }
 
 .toast-title {
-  font-size: 30px;
-  font-weight: var(--weight-500);
-  color: var(--onyx);
+  color: var(--sonic-silver);
+  font-size: var(--fs-7);
+  line-height: 1.6;
+  padding: 10px;
 }
 
 .toast-meta {
-  margin-top: 10px;
-  padding: 1rem;
-  background-color: var(--salmon-pink);
-  border-radius: .5rem;
+  background: var(--eerie-black);
+  color: var(--white);
   font-size: var(--fs-7);
-  color: var(--cultured);
+  font-weight: var(--weight-600);
+  text-transform: uppercase;
+  padding: 10px 15px;
+  margin: auto;
   width: fit-content;
-  cursor: pointer;
+  -webkit-border-radius: var(--border-radius-sm);
+          border-radius: var(--border-radius-sm);
+  margin: auto;
+  -webkit-transition: var(--transition-timing);
+  -o-transition: var(--transition-timing);
+  transition: var(--transition-timing);
 }
-
+.toast-meta:hover{
+  background: var(--salmon-pink); 
+}
 
 
 
