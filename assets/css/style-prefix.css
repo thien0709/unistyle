@@ -1521,7 +1521,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  font-size: var(--fs-7);
+  font-size: var(--fs-9);
   color: var(--eerie-black);
   margin-bottom: 10px;
 }
