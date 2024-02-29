@@ -332,6 +332,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   font-size: var(--fs-2);
   font-weight: var(--weight-600);
   margin-bottom: 10px;
+  text-align: center;
+  margin: 2rem 0;
 }
 
 .newsletter-desc {
@@ -340,6 +342,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   line-height: 1.6;
   text-align: center;
   display: flex;
+  padding-top: 1rem;
 }
 
 .email-field {
@@ -1642,7 +1645,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   color: var(--onyx);
   font-size: var(--fs-5);
   text-transform: capitalize;
-  margin-bottom: 5px;
+  margin: 1rem;
 }
 
 .cta-text {
@@ -1657,6 +1660,11 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   text-transform: uppercase;
   font-weight: var(--weight-700);
   margin: auto;
+}
+.cta-btn:hover{
+  scale: 1.5;
+  transition: cubic-bezier(.5,-.75,.7,2) .8s;
+  color: var(--salmon-pink);
 }
 
 
