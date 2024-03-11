@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#content{
+    margin: auto;
+    background-color: #F8F6F4 ;
+    width: 60vw;
+    min-width: 30rem;
+    height: auto;
+    padding: 2rem;
+    font-family: "Geologica", sans-serif;
+
+}
+.tittle-content{
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.product1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+
+}
+.product-img{
+
+}
+.product-content{
+
+}
+.product-title{
+
+}
+.prodcut-price{
+    margin-top: 10px;
+display: flex;
+justify-content: space-around;
+height: 30px;
+}
+.prodcut-price del{
+    font-size: small;
+    line-height: 30px;
+}
+.price{
+line-height: 30px;
+}
+.return-product{
+    border: 2px solid #FFD4D4;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.return-product:hover{
+    background-color: #FFD4D4;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    scale: 1.2;
+}
