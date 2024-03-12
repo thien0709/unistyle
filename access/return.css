@@ -6,6 +6,24 @@ body{
     justify-content: center;
 
 }
+.notification{
+    position: fixed;
+    right: -1rem;
+    top: 15rem;
+    height: 5vh;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    color: darkgreen;
+    font-weight: 500;
+    font-family: "Geologica", sans-serif;
+    border-radius: 1.5rem 1.5rem 0;
+    display: none;
+}
+.notification.active{
+    display: flex;
+}
 .overlay-return {
     display: flex;
     justify-content: center;
@@ -44,6 +62,13 @@ body{
 }
 .return-box-img{
     width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.return-box-img img{
+    max-width: 200px;
+    margin: auto;
 }
 .return-box-content{
     width: 60%;
@@ -61,7 +86,7 @@ body{
     max-height: 0;
     opacity: 0;
     visibility: hidden;
-    transition: max-height 1s ease-out, opacity 1s ease-out, visibility 1s ease-out;
+    transition: max-height .5s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity .5s cubic-bezier(0.455, 0.03, 0.515, 0.955), visibility .5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .different-text.active{
     max-height: 100px; /* Thay đổi giá trị này thành chiều cao tối đa mong muốn của phần tử */
@@ -120,7 +145,7 @@ h4{
 
 }
 .product-content{
-
+width: 25rem;
 }
 .product-title{
 
@@ -130,6 +155,7 @@ h4{
 display: flex;
 justify-content: space-around;
 height: 30px;
+width: 12rem;
 }
 .prodcut-price del{
     font-size: small;
@@ -143,9 +169,15 @@ line-height: 30px;
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
-}
-.return-product:hover{
     background-color: #FFD4D4;
+}
+.return-product.active{
+    background-color: gray;
+    cursor: not-allowed;
+    opacity: 0.8;
+    border: none;
+}
+.return-product:not(.active):hover{
     transition: cubic-bezier(0.19, 1, 0.22, 1) 2s;
     scale: 1.2;
 }
