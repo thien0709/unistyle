@@ -10,7 +10,7 @@ body{
     position: fixed;
     right: -1rem;
     top: 15rem;
-    height: 5vh;
+    height: 8vh;
     width: 20vw;
     justify-content: center;
     align-items: center;
@@ -92,6 +92,8 @@ body{
     max-height: 100px; /* Thay đổi giá trị này thành chiều cao tối đa mong muốn của phần tử */
     opacity: 1;
     visibility: visible;
+    padding: 1rem;
+    font-size: large;
 }
 
 h4{
