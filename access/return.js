@@ -8,13 +8,12 @@ for (let i = 0; i < returnBtn.length; i++) {
       }
     let productImage = returnBtn[i].parentElement.querySelector(".product-img");
     overlayReturn.classList.add("active");
-    console.log(productImage, imageReturn);
     imageReturn.src = productImage.src;
-
     let returnButton = document.querySelector(".returnbutton");
     let notification = document.querySelector(".notification");
     returnButton.addEventListener("click", function () {
-      overlayReturn.classList.remove("active");
+        overlayReturn.classList.remove("active");
+      textArea.value='';
       notification.classList.add("active");
       setTimeout(() => {
         notification.classList.remove("active");
