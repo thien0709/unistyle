@@ -1,213 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order</title>
 
     <link
-    rel="shortcut icon"
-    href="./assets/images/logo/favicon.png"
-    type="image/x-icon"
-  />
+      rel="shortcut icon"
+      href="./assets/images/logo/favicon.png"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
   - custom css link
 -->
-  <link rel="stylesheet" href="./assets/css/style-prefix.css" />
-  <link rel="stylesheet" href="./access/return.css">
+    <link rel="stylesheet" href="./assets/css/style-prefix.css" />
+    <link rel="stylesheet" href="./access/return.css" />
 
-  <!--
+    <!--
   - google font link
 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  />
-</head>
-<body>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="overlay-return" data-overlay>
+      <div class="return-box">
+        <div class="return-box-img"></div>
+        <div class="return-box-content">
+          <h2>Bạn muốn trả hàng</h2>
+          <div class="date-return">
+            <h4>Thời gian bạn muốn trả hàng</h4>
+            <input type="datetime-local" name="" id="time-return" />
+          </div>
+          <h4>Tình trạng sản phẩm</h4>
+          <div class="select-return">
+            <label for="my-input" class="title-class">Nguyên vẹn</label>
+            <input type="radio" name="select" id="my-input" />
+            <label for="my-input" class="title-class">Khác</label>
+            <input type="radio" id="different-return" name="select" class="" />
+          </div>
+          <textarea name="" id="different-text" class="different-text" cols="20" rows="10"></textarea>
+          <div class="button-tools">
+            <button class="returnbutton">Trả hàng</button>
+            <button class="returncancel">Hủy bỏ</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <header>
-        <div class="header-top">
-          <div class="container">
-            <ul class="header-social-container">
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
-  
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
-  
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
-  
-              <li>
-                <a href="#" class="social-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-            </ul>
-  
-            <div class="header-alert-news">
-              <p>
-                <b>“Stay Trendy, Not Spendy!”</b>
-              </p>
-            </div>
-  
-            <div class="header-top-actions">
-              <select name="currency">
-                <option value="VND">VND &#x20AB;</option>
-              </select>
-  
-              <select name="language">
-                <option value="vn">Vietnamese</option>
-              </select>
-            </div>
+      <div class="header-top">
+        <div class="container">
+          <ul class="header-social-container">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <div class="header-alert-news">
+            <p>
+              <b>“Stay Trendy, Not Spendy!”</b>
+            </p>
+          </div>
+
+          <div class="header-top-actions">
+            <select name="currency">
+              <option value="VND">VND &#x20AB;</option>
+            </select>
+
+            <select name="language">
+              <option value="vn">Vietnamese</option>
+            </select>
           </div>
         </div>
-  
-        <div class="header-main">
-          <div class="container">
-            <a href="./index.html" class="header-logo">
-              <img
-                src="./assets/images/logo/Logo.png"
-                alt="Unistyle's logo"
-                width="200"
-                height="60"
-              />
-            </a>
-  
-            <div class="header-search-container">
-              <input
-                type="search"
-                name="search"
-                class="search-field"
-                placeholder="Nhập tên sản phẩm cần tìm..."
-              />
-  
-              <button class="search-btn">
-                <ion-icon name="search-outline"></ion-icon>
-              </button>
-            </div>
-  
-            <div class="header-user-actions">
-              <button class="action-btn">
-                <a href="./index1.html" id="titleProduct" style="color: var(--onyx);" >
-                  <ion-icon name="person-outline"> </ion-icon
-                ></a>
-              </button>
-  
-              <button class="action-btn">
-                <ion-icon name="heart-outline"></ion-icon>
-                <span class="count">32</span>
-              </button>
-  
-              <button class="action-btn">   
-                <a href="./return.html" id="titleProduct" style="color: var(--onyx);" >
+      </div>
+
+      <div class="header-main">
+        <div class="container">
+          <a href="./index.html" class="header-logo">
+            <img
+              src="./assets/images/logo/Logo.png"
+              alt="Unistyle's logo"
+              width="200"
+              height="60"
+            />
+          </a>
+
+          <div class="header-search-container">
+            <input
+              type="search"
+              name="search"
+              class="search-field"
+              placeholder="Nhập tên sản phẩm cần tìm..."
+            />
+
+            <button class="search-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="header-user-actions">
+            <button class="action-btn">
+              <a
+                href="./index1.html"
+                id="titleProduct"
+                style="color: var(--onyx)"
+              >
+                <ion-icon name="person-outline"> </ion-icon
+              ></a>
+            </button>
+
+            <button class="action-btn">
+              <ion-icon name="heart-outline"></ion-icon>
+              <span class="count">32</span>
+            </button>
+
+            <button class="action-btn">
+              <a
+                href="./return.html"
+                id="titleProduct"
+                style="color: var(--onyx)"
+              >
                 <ion-icon name="bag-handle-outline"></ion-icon>
-                <span class="count">3</span></a>
-              </button>
-             
-            </div>
+                <span class="count">7</span></a
+              >
+            </button>
           </div>
         </div>
-  
-        <nav class="desktop-navigation-menu">
-          <div class="container">
-            <ul class="desktop-menu-category-list">
-              <li class="menu-category">
-                <a href="#" class="menu-title">Trang Chủ</a>
-              </li>
-  
-              <li class="menu-category">|</li>
-  
-              <li class="menu-category">
-                <a href="#" class="menu-title">Đồ nam</a>
-  
-                <ul class="dropdown-list">
-                  <li class="dropdown-item">
-                    <a href="#">Shirt</a>
-                  </li>
-  
-                  <li class="dropdown-item">
-                    <a href="#">Shorts & Jeans</a>
-                  </li>
-  
-                  <li class="dropdown-item">
-                    <a href="#">Safety Shoes</a>
-                  </li>
-  
-                  <li class="dropdown-item">
-                    <a href="#">Wallet</a>
-                  </li>
-                </ul>
-              </li>
-  
-              <li class="menu-category">
-                <a href="#" class="menu-title">Đồ nữ</a>
-  
-                <ul class="dropdown-list">
-                  <li class="dropdown-item">
-                    <a href="#">Dress & Frock</a>
-                  </li>
-  
-                  <li class="dropdown-item">
-                    <a href="#">Earrings</a>
-                  </li>
-  
-                  <li class="dropdown-item">
-                    <a href="#">Necklace</a>
-                  </li>
-  
-                  <li class="dropdown-item">
-                    <a href="#">Makeup Kit</a>
-                  </li>
-                </ul>
-              </li>
-  
-              <li class="menu-category">
-                <a href="#" class="menu-title">Phụ kiện</a>
-  
-                <ul class="dropdown-list">
-                  <li class="dropdown-item">
-                    <a href="#">Earrings</a>
-                  </li>
-  
-                  <li class="dropdown-item">
-                    <a href="#">Couple Rings</a>
-                  </li>
-  
-                  <li class="dropdown-item">
-                    <a href="#">Necklace</a>
-                  </li>
-  
-                  <li class="dropdown-item">
-                    <a href="#">Bracelets</a>
-                  </li>
-                </ul>
-              </li>
-  
-              <li class="menu-category">
-                <a href="#" class="menu-title">Blog</a>
-              </li>
-  
-              <li class="menu-category">
-                <a href="#" class="menu-title">Ưu đãi</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-  
+      </div>
+
+      <nav class="desktop-navigation-menu">
+        <div class="container">
+          <ul class="desktop-menu-category-list">
+            <li class="menu-category">
+              <a href="#" class="menu-title">Trang Chủ</a>
+            </li>
+
+            <li class="menu-category">|</li>
+
+            <li class="menu-category">
+              <a href="#" class="menu-title">Đồ nam</a>
+
+              <ul class="dropdown-list">
+                <li class="dropdown-item">
+                  <a href="#">Shirt</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Shorts & Jeans</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Safety Shoes</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Wallet</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-category">
+              <a href="#" class="menu-title">Đồ nữ</a>
+
+              <ul class="dropdown-list">
+                <li class="dropdown-item">
+                  <a href="#">Dress & Frock</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Earrings</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Necklace</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Makeup Kit</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-category">
+              <a href="#" class="menu-title">Phụ kiện</a>
+
+              <ul class="dropdown-list">
+                <li class="dropdown-item">
+                  <a href="#">Earrings</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Couple Rings</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Necklace</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Bracelets</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-category">
+              <a href="#" class="menu-title">Blog</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="#" class="menu-title">Ưu đãi</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <div id="content">
       <div class="tittle-content">
@@ -232,10 +262,8 @@
             <p class="price">149.000 VND</p>
             <del>190.000 VND</del>
           </div>
-        </div> 
-        <div class="return-product">
-            Trả hàng
-          </div>
+        </div>
+        <div class="return-product">Trả hàng</div>
       </div>
       <div class="product1">
         <div class="product-img-box">
@@ -256,10 +284,8 @@
             <p class="price">149.000 VND</p>
             <del>190.000 VND</del>
           </div>
-        </div> 
-        <div class="return-product">
-            Trả hàng
-          </div>
+        </div>
+        <div class="return-product">Trả hàng</div>
       </div>
       <div class="product1">
         <div class="product-img-box">
@@ -280,10 +306,8 @@
             <p class="price">149.000 VND</p>
             <del>190.000 VND</del>
           </div>
-        </div> 
-        <div class="return-product">
-            Trả hàng
-          </div>
+        </div>
+        <div class="return-product">Trả hàng</div>
       </div>
       <div class="product1">
         <div class="product-img-box">
@@ -304,10 +328,8 @@
             <p class="price">149.000 VND</p>
             <del>190.000 VND</del>
           </div>
-        </div> 
-        <div class="return-product">
-            Trả hàng
-          </div>
+        </div>
+        <div class="return-product">Trả hàng</div>
       </div>
       <div class="product1">
         <div class="product-img-box">
@@ -328,10 +350,8 @@
             <p class="price">149.000 VND</p>
             <del>190.000 VND</del>
           </div>
-        </div> 
-        <div class="return-product">
-            Trả hàng
-          </div>
+        </div>
+        <div class="return-product">Trả hàng</div>
       </div>
       <div class="product1">
         <div class="product-img-box">
@@ -352,10 +372,8 @@
             <p class="price">149.000 VND</p>
             <del>190.000 VND</del>
           </div>
-        </div> 
-        <div class="return-product">
-            Trả hàng
-          </div>
+        </div>
+        <div class="return-product">Trả hàng</div>
       </div>
       <div class="product1">
         <div class="product-img-box">
@@ -376,10 +394,8 @@
             <p class="price">149.000 VND</p>
             <del>190.000 VND</del>
           </div>
-        </div> 
-        <div class="return-product">
-            Trả hàng
-          </div>
+        </div>
+        <div class="return-product">Trả hàng</div>
       </div>
     </div>
     <footer>
@@ -396,7 +412,6 @@
         </div>
       </div>
     </footer>
-
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -405,7 +420,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="./assets/js/Order.js"></script>
+    <script src="./access/return.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
-</body>
+  </body>
 </html>
